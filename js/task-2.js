@@ -1,9 +1,9 @@
 function formatMessage(message, maxLength) {
     if (message.length <= maxLength) {
-        return "Curabitur ligula sapien";
+        return message;
     } else {
         let slicer = message.slice(0, maxLength);
-        return `${slicer}"..."`;
+        return `${slicer}...`;
     }
 }
 console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
